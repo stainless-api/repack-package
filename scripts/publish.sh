@@ -7,4 +7,4 @@ cleanup() {
 trap cleanup EXIT
 mv "$(COREPACK_ENABLE_STRICT=0 npm pack --foreground-scripts=false)" "$DIR/package.tgz"
 bin/repack.mjs "$DIR/package.tgz" "$DIR/package.packed.tgz"
-pnpm publish "$DIR/package.tgz"
+pnpm publish "$DIR/package.tgz" --access public
