@@ -237,9 +237,9 @@ else {
                   process.stderr.write(
                     `packed version was ${red(
                       `${lost.toFixed(2)}%`,
-                    )} larger, keeping original ${dim("(")}${prettyBytes(
+                    )} larger ${dim("(")}${prettyBytes(
                       message.before,
-                    )} ${dim("to")} ${prettyBytes(message.after)}${dim(")")}\n`,
+                    )} ${dim("to")} ${prettyBytes(message.after)}${dim(")")} - keeping original\n`,
                   );
                 }
                 resolve(undefined);
