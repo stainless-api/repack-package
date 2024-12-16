@@ -2,6 +2,7 @@
   "name": "@stainless-api/repack-package",
   "version": "0.0.1",
   "description": "Repack NPM tgz files for better compression.",
+  "private": false,
   "bin": {
     "repack": "bin/repack.mjs"
   },
